@@ -282,3 +282,53 @@ Media Queries for skill section
     padding-left: 2rem;
   }
 }
+/*
+=============== 
+Products Section
+===============
+*/
+.products {
+  background: var(--clr-grey-10);
+}
+.products article {
+  padding: 2rem 0;
+}
+.product-img {
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+  height: 17rem;
+  object-fit: cover;
+}
+.product-price {
+  color: var(--clr-primary);
+}
+/*
+=============== 
+Media Queries for products section
+===============
+*/
+/* small Screen */
+@media screen and (min-width: 768px) {
+  .product {
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+  }
+}
+/* medium Screen */
+@media screen and (min-width: 992px) {
+  .product {
+    width: 33.3%;
+  }
+}
+/* Big Screen */
+@media screen and (min-width: 1200px) {
+  .products-info {
+    float: left;
+    width: 30%;
+  }
+  .products-inventory {
+    float: left;
+    width: 70%;
+  }
+}
