@@ -1,16 +1,17 @@
 // setup date
 const date = (document.getElementById("date").innerHTML =
   new Date().getFullYear());
-// setup nav
-const navBtn = document.getElementById("nav-btn");
-const navbar = document.getElementById("navbar");
-const navClose = document.getElementById("nav-close");
+
+const navBar = document.querySelector(".navbar");
+const navBtn = document.querySelector("#nav-btn");
+const navClose = document.querySelector(".nav-close");
+
 // show nav
 navBtn.addEventListener("click", () => {
-  console.log("button click");
-  navbar.classList.add("showNav");
+  navBar.classList.add("showNav");
 });
-// close nav
-navBtn.addEventListener("click", () => {
-  navbar.classList.remove("showNav");
+
+// // close nav
+navClose.addEventListener("click", () => {
+  navBar.classList.remove("showNav");
 });
